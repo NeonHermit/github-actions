@@ -13,7 +13,7 @@ jobs:
         run: docker build . --tag my-image-name
 
       - name: Publish Image
-        uses: elgohr/Publish-Docker-Github/Action@main
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: NeonHermit/github-actions
           username: ${{ secrets.DOCKER_USERNAME }}
